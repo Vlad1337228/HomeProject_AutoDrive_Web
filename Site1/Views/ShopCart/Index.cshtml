@@ -1,0 +1,14 @@
+﻿
+@addTagHelper *,Microsoft.AspNet.Mvc.TegHelpers
+@model ShopCartViewModel
+<div>
+    @foreach (var el in Model.shopCart.listShopItems)
+    {
+        <div class="alert alert-warniing mt-3">
+            <b>Автомобиль:</b>@el.Car.name<br />
+            <b>Цена:</b>@el.Car.price.ToString("c")
+        </div>
+    }
+    <hr />
+    <a class="btn btn-danger"  href="/Order/Checkout">Оплатить</a>
+</div>

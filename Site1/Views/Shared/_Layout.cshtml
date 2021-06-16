@@ -1,0 +1,52 @@
+﻿<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/Style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark ">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Переключение навигации">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"><ya-tr-span data-index="1-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Home" data-translation="Главная" data-type="trSpan">AutoDrive</ya-tr-span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/Cars/List"><ya-tr-span data-index="1-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Home" data-translation="Главная" data-type="trSpan">Все машины</ya-tr-span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Cars/List/electro"><ya-tr-span data-index="2-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Link" data-translation="Ссылка" data-type="trSpan">Электроавтомобили</ya-tr-span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Cars/List/fuel"><ya-tr-span data-index="2-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Link" data-translation="Ссылка" data-type="trSpan">Бинзиновые автомобили</ya-tr-span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/ShopCart/index"><ya-tr-span data-index="2-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Link" data-translation="Ссылка" data-type="trSpan">Корзина</ya-tr-span></a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+                        <button class="btn btn-outline-success" type="submit"><ya-tr-span data-index="4-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Search" data-translation="Поиск" data-type="trSpan">Поиск</ya-tr-span></button>
+                    </form> 
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="row m-5" >
+        <div class="container mt-4 ">
+            @RenderBody()
+        </div>
+    </div>
+    <footer class="container">
+        <p class="float-end"><a href="#"><ya-tr-span data-index="30-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Back to top" data-translation="Наверх" data-type="trSpan">Наверх</ya-tr-span></a></p>
+        <p><ya-tr-span data-index="31-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="© 2017–2021 Company, Inc. · " data-translation="© 2017-2021 Company, Inc. · " data-type="trSpan">© 2017-2021 Company, Inc. · </ya-tr-span><a href="#"><ya-tr-span data-index="31-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Privacy" data-translation="Конфиденциальность" data-type="trSpan">Конфиденциальность</ya-tr-span></a><ya-tr-span data-index="31-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value=" · " data-translation=" · " data-type="trSpan"> · </ya-tr-span><a href="#"><ya-tr-span data-index="31-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Terms" data-translation="Условия" data-type="trSpan">Условия</ya-tr-span></a></p>
+    </footer>
+    <script src="~/js/bootstrap.min.js"></script>
+</body>
+</html>
